@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Rye&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Mood Sommelier</title>
+</head>
+<body>
+    <a href="#sectionOne" class="skip-link">Skip to First Question.</a>
+    <header>
+        <div class="wrapper">
+            <div class="title">
+                <img class="titleGlassLeft" src="./assets/icons8-wine-glass-480.png" alt="">
+                <h1>Mood Sommelier</h1>
+                <img class="titleGlassRight" src="./assets/icons8-wine-glass-480.png" alt="">
+            </div>
+            <h3>Click the bottle to get started</h3>
+    
+            <div>
+                <button>
+                    <a href="#sectionOne"><img class="bottleButton" src="./assets/icons8-wine-bottle-100.png" alt=""></i></a>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="questionOneContainer">
+        <h2 id="sectionOne">Describe your current mood</h2>
+        <form class="moodForm wrapper" action="">
+            <fieldset class="userMood">
+                    <div class="inputContainer">
+                        <input id="reflective" type="radio" name="mood" value="reflective">
+                        <label for="reflective">Reflective</label>
+                    </div>
+                    <div class="inputContainer">
+                        <input id="gloomy" type="radio" name="mood" value="gloomy">
+                        <label for="gloomy">Gloomy</label>
+                    </div>
+                    <div class="inputContainer">
+                        <input id="indifferent" type="radio" name="mood" value="indifferent">
+                        <label for="indifferent">Indifferent</label>
+                    </div>
+                    <div class="inputContainer">
+                        <input id="energetic" type="radio" name="mood" value="energetic">
+                        <label for="energetic">Energetic</label>
+                    </div>
+                    <div class="inputContainer">
+                        <input id="celebratory" type="radio" name="mood" value="celebratory">
+                        <label for="celebratory">Celebratory</label>
+                    </div>
+                    <div class="inputContainer">
+                        <input id="adventurous" type="radio" name="mood" value="adventurous">
+                        <label for="adventurous">Adventurous</label>
+                    </div>
+                    <div class="inputContainer">
+                        <input id="mellow" type="radio" name="mood" value="mellow">
+                        <label for="mellow">Mellow</label>
+                    </div>
+                    <div class="inputContainer">
+                        <input id="angry" type="radio" name="mood" value="angry">
+                        <label for="angry">Angry</label>
+                    </div>
+            </fieldset>
+        </form>
+
+        <div class="submitContainer">
+            <button type="text" class="submitMood">
+                <a href="#sectionTwo"><i class="fas fa-chevron-down"></i></a>
+            </button>
+        </div>
+    </section>
+
+    <section class="questionTwoContainer" id="sectionTwo">
+        <h2>What is your wine preference?</h2>
+        <form class="wineForm wrapper" action="">
+            <fieldset class="userDrink">
+                <div class="box">
+                    <input id="red" type="radio" name="drink" value="red">
+                    <label for="red">
+                        <img src="./assets/icons8-wine-glass-240(2).png" alt="">
+                    </label>
+                </div>
+                <div class="box">
+                    <input id="white" type="radio" name="drink" value="white">
+                	<label for="white">
+                        <img src="./assets/icons8-wine-glass-240(3).png" alt="">
+                	</label>
+                </div> 
+                <div class="box">
+                    <input id="other" type="radio" name="drink" value="other">
+                    <label for="other">
+                        <img src="./assets/icons8-wine-glass-240(4).png" alt="">
+                    </label>
+                </div>
+            </fieldset>
+        </form>
+
+        <h3>Click the bottle for your result</h3>
+
+        <div class="submitContainer">
+            <button type="text" class="submitWine">
+                <a href="#result"><img class="bottleButton" src="./assets/icons8-wine-bottle-100.png" alt=""></a>
+            </button>
+        </div>
+    </section>
+
+    <div class="result" id="result">
+
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+    <script src="./scripts/script.js"></script>
+    
+</body>
+</html>
